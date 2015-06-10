@@ -1,0 +1,25 @@
+=================================================================================
+
+2. Create a sort method for the interface
+
+   Evaluation criteria
+    - Technical design
+    - Speed
+    - Code style
+
+=================================================================================
+Let's add a dropdown element above the CategoryProducts div to allow customers to
+sort the products.
+
+See 2-Sort-DOM-Elements.jpg for position & style guidelines.
+
+Continue to modify mc_ujs.js to create your solution.
+You might also want to add a few styles to mc_styles.css if you're feeling
+confident about time management.
+
+Questions?
+
+
+
+
+

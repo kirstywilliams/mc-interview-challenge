@@ -1,0 +1,28 @@
+=================================================================================
+
+3. Create a cool user interaction
+
+   Evaluation criteria
+    - Time management
+    - Wow factor
+    - Working solution when time expires
+
+   It's important that you can demo any solution or progress at the end of the
+   time allotted. Work progressively and use git if it's helpful.
+
+=================================================================================
+Let's make a cool hover-zoom interaction on the product thumbnails. There's a
+loose
+
+See 3-Image-Hover-Zoom.jpg for a mockup- feel free to simplify, extend, and show
+off your UX skills and color outside the lines.
+
+Continue to modify mc_ujs.js to create your solution
+You'll need to add styles to mc_styles.css
+
+Questions?
+
+
+
+
+

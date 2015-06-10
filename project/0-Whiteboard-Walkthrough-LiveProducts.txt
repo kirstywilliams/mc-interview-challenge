@@ -1,0 +1,20 @@
+=================================================================================
+
+0. Paired code review for LiveProducts.js
+
+   Evaluation criteria
+    - Code comprehension
+    - Good questions
+
+=================================================================================
+LiveProducts.js is a utility class that loads product definitions from an
+external data source, parses the definitions, and caches each product as a
+local json object (see the helper constructor in Products.js)
+
+The class is instantiated on jQuery DOM ready and it's methods are available,
+however no data is accessible until it completes it's data load.
+
+Let's walk through how the library works and come up with a plan to use it for part 1.
+
+
+

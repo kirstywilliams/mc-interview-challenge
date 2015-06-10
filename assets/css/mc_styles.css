@@ -1,0 +1,375 @@
+/*
+
+mc_styles.css
+Solution styles go here
+
+Tasteful font palette:
+    headings:       PT Sans Narrow, Bold Uppercase
+    interactive:    Droid Sans, Bold
+    readable:       Gudea
+
+Tasteful color palette:
+    $color_gray_dark:       #17110d;
+    $color_gray:            #847b70;
+    $color_gray_light:      #d7c9c4;
+    $color_green_dark:      #485626;
+    $color_green_medium:    #8fa648;
+    $color_deep_green:      #709400;
+    $color_green_light:     #aec857;
+    $color_yellow:          #ffd35f;
+    $color_orange_light:    #f6881f;
+    $color_orange_dark:     #ee6223;
+    $color_orange_darker:   #A84418;
+
+*/
+
+body,html{
+    margin:0;
+    font-family: 'Gudea';
+    background-color: #17110d;
+}
+h1,h2{
+    margin:0;
+    padding:16px 0 0;
+    text-transform:uppercase;
+    font-size: 42px;
+    font-family: 'PT Sans Narrow';
+    text-shadow: 1px 2px 0 #f6881f;
+    text-align: center;
+}
+
+#dummy_wrapper {
+    margin:0 auto;
+    max-width: 1171px;
+}
+#dummy_header img, #dummy_footer img {
+    max-width: 100%;
+    background-color: #17110d;
+    height: auto;
+}
+#project_yield {
+    background-color: white;
+}
+#splash_text {
+    max-width: 800px;
+    margin:18px auto;
+}
+.CategoryProducts{
+    position:relative;
+    font-size:0;
+    text-align: center;
+    margin:0 auto;
+    max-width:880px
+}
+
+.CategoryProduct {
+    display:inline-block;
+    position:relative;
+    box-sizing:border-box;
+    width:25%;
+    padding:2%;
+}
+.CategoryProduct img{
+    /*margin:0 0 8px;
+    padding:0;
+    width:96%;
+    height:auto;*/
+}
+.ProductName{
+    color:#17110d;
+    font-size: 18px;
+    text-align:center;
+    height: 1.2em;
+    overflow:hidden;
+}
+.ProductPrice{
+    font-size:15px;
+    color:#8fa648;
+}
+.TwoColumn{
+    -webkit-column-count: 2;
+    -moz-column-gap: 30px;
+    -webkit-column-gap: 30px;
+}
+.TwoColumn p{
+    display:inline-block;
+}
+.CTA{
+    text-align: center;
+    padding:0 0 48px;
+}
+
+/* ============= SOLUTION STYLING ============*/
+
+/* -------- general -------- */
+.clearfix{ clear: both; }
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+a, a:-webkit-any-link{
+  color: #485626;
+}
+
+/* -------- Filter tool styling -------- */
+.DataTools{
+    position:relative;
+    font-size:0;
+    text-align: left;
+    margin:0 auto;
+    max-width:880px
+}
+
+.Filters{
+    margin: 0 2%;
+    width: 21%;
+
+    border: 1px solid #aec857;
+    border-radius: 3px;
+
+    overflow: hidden;
+    position: relative;
+}
+
+select:focus { outline: none; }
+
+.Filters select {
+  height: 34px;
+  padding: 5px 0 5px 5px;
+  background: transparent;
+  border: none;
+  font-size: 15px;
+  
+  /*hide default down arrow in webkit */
+  -webkit-appearance: none; 
+}
+
+.fa-sort-asc {
+  position: absolute;
+  line-height: 24px;
+  top: 0;
+  right: 12px;
+  font-size: 24px;
+  color: #17110d;
+}
+
+/* hide default down arrow in IE10*/
+select::-ms-expand { display: none; }
+
+/* fall back in opera */
+_:-o-prefocus {
+  .Filters { background: none; }
+}
+
+/* --------- Image Container styling  ---------- */
+.CategoryProduct{
+    text-align: center;
+}
+
+.CategoryProduct .ProductWrapper{
+    width: 100%;
+    position: relative;
+}
+
+.CategoryProduct .ProductWrapper:hover{
+    padding: 4%;
+    border: 2px solid #f6881f;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+}
+
+.CategoryProduct .ProductWrapper img{
+    padding:0;
+    width:100%;
+    height:auto;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+.CategoryProduct:hover .ProductWrapper img{
+    opacity: 0.8;
+
+    -webkit-filter: grayscale(100%);
+    
+    -webkit-transform: rotate(10deg);
+    -moz-transform: rotate(10deg);
+    -ms-transform: rotate(10deg);
+    -o-transform: rotate(10deg);
+    transform: rotate(10deg);
+
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+
+    -webkit-box-shadow: 0 0 40px rgba(255,255,255,.6), inset 0 0 40px rgba(255,255,255,1);
+    -moz-box-shadow: 0 0 40px rgba(255,255,255,.6), inset 0 0 40px rgba(255,255,255,1);
+    box-shadow: 0 0 40px rgba(255,255,255,.6), inset 0 0 40px rgba(255,255,255,1);
+}
+
+.CategoryProduct  .ProductWrapper .ProductActionWrapper .ProductRating,
+.CategoryProduct  .ProductWrapper .ProductActionWrapper .ProductButtons{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.CategoryProduct  .ProductWrapper .ProductActionWrapper .ProductRating{
+    transition: .4s;
+    -webkit-transition: .4s;
+}
+
+.CategoryProduct  .ProductWrapper .ProductActionWrapper .ProductButtons{
+    transition: .4s;
+    -webkit-transition: .4s;
+}
+
+.ProductButton{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    border: none;
+    background: none;
+    background: #aec857;
+    color: #485626;
+    font-size: 10px;
+}
+
+.ProductButton.ProductAddToCart,
+.ProductRating input,
+.ProductButton.ProductViewMore{
+    position: absolute;
+    right: -15px;
+    top: 50%;
+    cursor: pointer;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    z-index: 10;
+}
+
+.ProductRating input{
+    right: -15px;
+    background: #17110d;
+    border: 2px solid #aec857;
+    border-radius: 50%;
+    color: #fff;
+    font-weight: bold;
+    height: 30px;
+    text-align: center;
+    width: 30px;
+}
+.CategoryProduct:hover .ProductActionWrapper .ProductRating{
+    opacity: 1;
+    transform: rotate(-1deg);
+    -webkit-transform: rotate(-1deg);
+}
+
+.ProductButton.ProductAddToCart{
+    right: 13px;
+    top: 6px;
+    transform: rotate(69deg);
+    -webkit-transform: rotate(69deg);
+}
+.ProductButton.ProductViewMore{
+    transform: rotate(-20deg);
+    -webkit-transform: rotate(-20deg);
+}
+
+.ProductButton .ProductViewMore button a,
+.ProductButton .ProductViewMore button a:hover,
+.ProductButton .ProductViewMore button a:visited,
+.ProductButton .ProductViewMore button a:active{
+    color: #485626;
+    text-decoration: none;
+}
+
+.CategoryProduct:hover .ProductActionWrapper .ProductButtons{
+    opacity: 1;
+    transform: rotate(20deg);
+    -webkit-transform: rotate(20deg);
+}
+
+.CategoryProduct .ProductInfo{
+    margin-top: 10px;
+}
+
+/* Media Queries */
+@-ms-viewport{
+  width: device-width;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media screen and (max-width: 480px) {
+    .CategoryProduct {
+        width:46%;
+        padding:2%;
+        margin-right: 0;
+    }
+
+    .ProductButton.ProductAddToCart{
+        right: 15px;
+        top: 0px;
+    }
+
+    .Filters{
+        margin: 0 6%;
+        width: 42%;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+    .CategoryProduct {
+        width:31.333%;
+        padding:2%;
+    }
+
+    .ProductButton.ProductAddToCart{
+        right: 18px;
+        top: 5px;
+    }
+
+    .Filters{
+        margin: 0 5%;
+        width: 27.5%;
+    }
+}
+
+
+/* iPads (portrait and landscape) ----------- */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .CategoryProduct {
+        width:31.333%;
+        padding:2%;
+    }
+
+    .ProductButton.ProductAddToCart{
+        right: 28px;
+        top: 10px;
+    }
+
+    .Filters{
+        margin: 0 5%;
+        width: 27.5%;
+    }
+}

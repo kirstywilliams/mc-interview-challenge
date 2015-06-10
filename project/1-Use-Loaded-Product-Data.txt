@@ -1,0 +1,43 @@
+=================================================================================
+
+1. Roll a basic JSON loader + HTML templating solution
+
+   Evaluation criteria
+    - Technical design
+    - Speed
+    - Code style
+
+=================================================================================
+landing_page.html has a set of products defined in hard coded HTML. So lame.
+
+Let's replace the hardcoded HTML with dynamically loaded products populated by
+LiveProducts.js.
+
+The LiveProducts.js file has everything you need to load in the list of products
+that we want to display on the page.
+
+Here is the list of product names to load in a convenient array:
+
+    loadList = [
+        "Slaughterhouse Crate",
+        "Everest Grill Crate",
+        "Exotic Meats Crate",
+        "Premium Jerky Ammo Can",
+        "Cow-pocalypse Crate",
+        "Outdoor Survival Crate",
+        "Exotic Meats Jerkygram",
+        "The Bacon Crate",
+        "Spicy Jerkygram",
+        "Bacon Jerkygram",
+        "Teriyaki Jerkygram",
+        "Hickory Grilling Crate",
+        "Outdoor Survival Ammo Can",
+        "Grill Master Crate"
+    ];
+
+The placeholder javascript file mc_ujs.js is ready for your solution- let's do it.
+
+
+
+
+
