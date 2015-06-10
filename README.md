@@ -1,6 +1,6 @@
 # Interview Coding Challenge
 
-Code submission for [ManCrates](http://www.mancrates.com) coding challenge. Time allowed 24hrs. Original project README file content is below (see toy_project).
+Code submission for [ManCrates](http://www.mancrates.com) coding challenge. Contributions made to the source by myself are outlined below. Time allowed 24hrs. Original project README file content is below (see toy_project).
 
 ## Instructions
 
