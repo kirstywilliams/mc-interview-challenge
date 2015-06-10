@@ -1,7 +1,23 @@
-# toy_project
-Interview Coding Challenge for [ManCrates](http://www.mancrates.com).
+# Interview Coding Challenge
 
-[*Landing page design project (time: 1 day).*]
+Code submission for [ManCrates](http://www.mancrates.com) coding challenge. Time allowed 24hrs. Original project README file content is below (see toy_project).
+
+## Instructions
+
+Challenge instructions can be found in the project folder. 
+
+## Challenge Contributions
+
+* mc_styles.css [section highlighted]
+* js/mc_ujs.js
+* plugins/
+* templates/
+* landing_page.html [section highlighted]
+* images/default_product.png
+
+# toy_project
+
+Landing page design project.
 
 ## Start a simple server for serving static assests by running the following command:
 
